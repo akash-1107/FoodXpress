@@ -8,7 +8,7 @@ export default function MyOrder() {
 
     const fetchMyOrder = async () => {
         console.log(localStorage.getItem('userEmail'))
-        await fetch("https://localhost:5000/api/auth/myOrderData", {
+        await fetch("https://gofoodmern-3pw2.onrender.com/api/auth/myOrderData", {
             // credentials: 'include',
             // Origin:"https://localhost:3000/login",
             method: 'POST',

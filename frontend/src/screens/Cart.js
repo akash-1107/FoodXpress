@@ -19,7 +19,7 @@ export default function Cart() {
   const handleCheckOut = async () => {
     let userEmail = localStorage.getItem("userEmail");
     // console.log(data,localStorage.getItem("userEmail"),new Date())
-    let response = await fetch("https://localhost:5000/api/auth/orderData", {
+    let response = await fetch("https://gofoodmern-3pw2.onrender.com/api/auth/orderData", {
       // credentials: 'include',
       // Origin:"https://localhost:3000/login",
       method: 'POST',
