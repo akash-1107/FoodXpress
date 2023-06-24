@@ -8,9 +8,9 @@ export default function Home() {
   const [foodItems, setFoodItems] = useState([])
   const [search, setSearch] = useState('')
   const loadFoodItems = async () => {
-    let response = await fetch("http://localhost:5000/api/auth/foodData", {
+    let response = await fetch("https://localhost:5000/api/auth/foodData", {
       // credentials: 'include',
-      // Origin:"http://localhost:3000/login",
+      // Origin:"https://localhost:3000/login",
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'

@@ -7,9 +7,9 @@ export default function Login() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    const response = await fetch("http://localhost:5000/api/auth/login", {
+    const response = await fetch("https://localhost:5000/api/auth/login", {
       // credentials: 'include',
-      // Origin:"http://localhost:3000/login",
+      // Origin:"https://localhost:3000/login",
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
@@ -62,5 +62,5 @@ export default function Login() {
 
 
 // , 'Accept': 'application/json',
-//         'Access-Control-Allow-Origin': 'http://localhost:3000/login', 'Access-Control-Allow-Credentials': 'true',
+//         'Access-Control-Allow-Origin': 'https://localhost:3000/login', 'Access-Control-Allow-Credentials': 'true',
 //         "Access-Control-Allow-Headers": "Origin, X-Requested-With, Content-Type, Accept",'Access-Control-Allow-Methods': 'PUT, POST, GET, DELETE, OPTIONS'
