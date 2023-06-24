@@ -1,6 +1,6 @@
 const mongoose = require('mongoose')
 // const mongoDbClient = require("mongodb").MongoClient
-const mongoURI = 'mongodb+srv://BringFood:v7k5f38uX55KHNMg@cluster0.vjqj27p.mongodb.net/BringFoodMern?retryWrites=true&w=majority'
+const mongoURI = process.env.mongoURI
 module.exports = function (callback) {
     mongoose.connect(mongoURI, { useNewUrlParser: true }, async (err, result) => {
         // mongoDbClient.connect(mongoURI, { useNewUrlParser: true }, async(err, result) => {
