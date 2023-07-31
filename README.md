@@ -1,4 +1,4 @@
-The Site is Live at https://gofoodmern.netlify.app/
+The Site is Live at https://foodxpressmern.netlify.app
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
