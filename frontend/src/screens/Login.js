@@ -40,7 +40,6 @@ export default function Login() {
             <div>
         <Navbar />
       </div>
-      <div  style={{height : '70px'}}></div>
       <div className='container'>
         
         <form className='w-50 m-auto mt-5 border bg-dark border-success rounded' onSubmit={handleSubmit}>

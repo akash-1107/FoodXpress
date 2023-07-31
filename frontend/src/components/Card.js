@@ -31,6 +31,10 @@ export default function Card(props) {
     setSize(e.target.value);
   }
   const handleAddToCart = async () => {
+    if (!localStorage.getItem("token")) {
+      //This function handles clicks on the card and redirects to the login page if the user is not logged in.
+           navigate("/login")
+         } 
     let food = []
     for (const item of data) {
       if (item.id === foodItem._id) {
