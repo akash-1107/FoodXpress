@@ -41,7 +41,7 @@ export default function MyOrder() {
             <div>
                 <Navbar />
             </div>
-
+            <div  style={{height : '70px'}}></div>
             <div className='container'>
                 <div className='row'>
 
