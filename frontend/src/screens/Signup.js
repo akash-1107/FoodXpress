@@ -51,7 +51,7 @@ export default function Signup() {
     console.log(json);
     if (json.success) {
       //save the auth toke to local storage and redirect
-      localStorage.setItem('token', json.authToken)
+      // localStorage.setItem('token', json.authToken)
       navigate("/login")
 
     }
@@ -66,12 +66,13 @@ export default function Signup() {
 
   return (
     <div style={{ backgroundImage: 'url("https://images.pexels.com/photos/1565982/pexels-photo-1565982.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1")', backgroundSize: 'cover',height: '100vh' }}>
-      <div>
-      <Navbar />
-      </div>
-
+     <div> <Navbar/> </div>
+      <div  style={{height : '70px'}}></div>
         <div className='container' >
           <form className='w-50 m-auto mt-5 border bg-dark border-success rounded' onSubmit={handleSubmit}>
+          <div className="text-center">
+              <label htmlFor="name" className="form-label text-white h2 mt-3">SignUp</label>
+            </div>
             <div className="m-3">
               <label htmlFor="name" className="form-label text-light">Name</label>
               <input type="text" className="form-control" name='name' value={credentials.name} onChange={onChange} aria-describedby="emailHelp" />
