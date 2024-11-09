@@ -3,6 +3,10 @@ import Card from '../components/Card'
 // import Carousel from '../components/Carousel'
 import Footer from '../components/Footer'
 import Navbar from '../components/Navbar'
+import burger from '../Images/burger.jpg'
+import pizza from '../Images/pizza.jpg'
+import dosa from '../Images/dosa.jpg'
+
 export default function Home() {
   const [foodCat, setFoodCat] = useState([])
   const [foodItems, setFoodItems] = useState([])
